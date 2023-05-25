@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./Asset/App.css";
 import React, { useEffect, useRef, useState } from "react";
 import About from "./Component/About";
-import RingLoader from "react-spinners/RingLoader";
+import HashLoader from "react-spinners/HashLoader";
 import { useAnimationFrame } from "framer-motion";
 // our Theatre.js project sheet, we'll use this later
 // const demoSheet = getProject("Demo Project").sheet("Demo Sheet");
@@ -13,15 +13,15 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1200);
+    }, 3000);
   }, []);
   return (
     <div className="bg-black h-screen grid  place-content-center">
       {loading ? (
         <div>
-          <RingLoader
+          <HashLoader
             color="lightblue"
-            size={150}
+            size={300}
             aria-label="Loading Spinner"
           />
         </div>
