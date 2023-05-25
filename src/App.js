@@ -13,17 +13,13 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1500);
   }, []);
   return (
     <div className="bg-black h-screen grid  place-content-center">
       {loading ? (
         <div>
-          <HashLoader
-            color="lightblue"
-            size={300}
-            aria-label="Loading Spinner"
-          />
+          <HashLoader color="white" size={200} aria-label="Loading Spinner" />
         </div>
       ) : (
         <div className="container mx-auto px-4">
