@@ -38,9 +38,9 @@ const Navbar = () => {
         onClick={toggleNavbar}
       >
         {isOpen ? (
-          <BiLeftArrow className="h-6 w-6 text-white" />
+          <BiLeftArrow className="h-6 w-6 text-lightyellow" />
         ) : (
-          <FiMenu className="h-6 w-6 text-white" />
+          <FiMenu className="h-6 w-6 text-lightyellow" />
         )}
       </button>
 
@@ -54,7 +54,8 @@ const Navbar = () => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <motion.ul
-            className="text-white text-2xl"
+            className="flex flex-col gap-8 text-4xl leading-8 my-12"
+            style={{ color: "white" }}
             variants={listItemContainerVariants}
             initial="hidden"
             animate="visible"

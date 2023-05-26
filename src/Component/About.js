@@ -1,38 +1,25 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { AboutMe, hello } from "../Asset/index";
+import { AboutContent, HomepageContent } from "../Asset";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
-const About = () => {
-  const [text, setText] = useState("");
-  const [isTypingComplete, setIsTypingComplete] = useState(false);
-
-  useEffect(() => {
-    let index = 0;
-
-    const typingInterval = setInterval(() => {
-      if (index < AboutMe[0].length) {
-        setText((prevText) => prevText + AboutMe[0].charAt(index));
-        index++;
-      } else {
-        setIsTypingComplete(true);
-        clearInterval(typingInterval);
-      }
-    }, 100);
-
-    return () => clearInterval(typingInterval);
-  }, []);
-
+function About() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <motion.h1
-        style={{ fontFamily: "'Nunito', sans-serif;", color: "white" }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-      >
-        {text}
-      </motion.h1>
+    <div>
+      {/* <motion.h1 style={{ color: "white" }}>About Me</motion.h1> */}
+      <motion.p
+        style={{
+          fontFamily: "'Nunito', sans-serif;",
+          color: "lightyellow",
+          fontSize: "18px",
+          lineHeight: "30px",
+          maxWidth: "78%",
+        }}
+        initial={{ left: "0%", opacity: 0 }}
+        animate={{ left: "0%", opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      ></motion.p>
     </div>
   );
-};
+}
 
 export default About;
