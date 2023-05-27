@@ -20,7 +20,7 @@ const HomePage = () => {
         clearInterval(typingInterval);
         setShowSecondText(true); // Start displaying the second text
       }
-    }, 100);
+    }, 70);
 
     return () => clearInterval(typingInterval);
   }, []);
