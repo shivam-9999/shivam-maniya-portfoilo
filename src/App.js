@@ -6,6 +6,7 @@ import HashLoader from "react-spinners/HashLoader";
 import { useAnimationFrame } from "framer-motion";
 import Nav from "./Component/Nav/Nav";
 import About from "./Component/About";
+import WorkExperience from "./Component/WorkExperience";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -13,29 +14,29 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    });
+    }, 0);
   }, []);
   return (
-    <div className="bg-black  ">
-      <Nav />
-      {loading ? (
-        <div className="h-screen flex items-center justify-center ">
-          <HashLoader color="white" size={200} aria-label="Loading Spinner" />
-        </div>
-      ) : (
-        <div>
-          <div className="flex items-center flex-col justify-center h-screen">
-            <div className="container mx-auto px-4 	font-weight: 400; font-bold text-xs">
-              <HomePage />
-            </div>
+    <div className="bg-black">
+      <div className="container h-screen mx-auto ">
+        <Nav />
+        {loading ? (
+          <div className="h-screen flex items-center justify-center ">
+            <HashLoader color="white" size={200} aria-label="Loading Spinner" />
           </div>
-          <div className="flex items-center flex-col justify-center h-screen">
-            <div className="container mx-auto px-4 	font-weight: 400; font-bold text-xs">
-              <About />
-            </div>
-          </div>
-        </div>
-      )}
+        ) : (
+          <section>
+            {/* ---- home Page  ----- */}
+            {/* <section className="flex flex-col justify-center h-screen px-4 font-weight: 400; font-bold text-xs">
+            <HomePage />
+          </section> */}
+            {/* ---- Work Experience  ----- */}
+            <section className=" ">
+              <WorkExperience />
+            </section>
+          </section>
+        )}
+      </div>
     </div>
   );
 }
