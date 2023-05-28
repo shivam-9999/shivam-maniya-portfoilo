@@ -10,6 +10,7 @@ module.exports = {
         lightyellow: "var(--lightyellow)",
         pink: "var(--pink)",
         white: "var(--white)",
+        lightgreen: "var(--lightgreen)",
       },
     },
   },

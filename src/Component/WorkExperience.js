@@ -6,7 +6,7 @@ function WorkExperience() {
   return (
     <div className="flex sm:pt-32 pt-40 sm:gap-40  gap-48  flex-col justify-between items-center">
       <motion.div
-        className="bg-white rounded-full shadow-md w-52  border-x-yellow-500 border-4 sm:relative lg:-left-56 md:-left-12  sm:w-96  sm:h-40 h-48 p-4 cursor-pointer"
+        className="bg-pink rounded-full shadow-md w-52   border-3 sm:relative lg:-left-56 md:-left-12  sm:w-96  sm:h-40 h-48 p-4 cursor-pointer"
         initial={{ scale: 0.2, opacity: 0.3 }}
         whileHover={{ scale: 2, opacity: 1 }}
         animate={{ rotate: 360, scale: 1.5, opacity: 0.7 }}
@@ -18,13 +18,13 @@ function WorkExperience() {
         }}
       >
         <motion.h1
-          className="text-green text-center font-semibold "
+          className="text-lightgreen text-center font-bold "
           style={{ fontFamily: "Open Sans" }}
         >
           Exomoon Infotech
         </motion.h1>
         <motion.p
-          className="text-paleYellow text-center pt-2 lg:left-40 "
+          className="text-paleYellow text-center pt-2 lg:left-40  "
           style={{ fontSize: "8px", fontFamily: "Open Sans sans-serif" }}
         >
           Developed web applications using MERN Stack ( MongoDb, Express JS,
@@ -40,7 +40,7 @@ function WorkExperience() {
         {/* Card content goes here */}
       </motion.div>
       <motion.div
-        className="bg-white rounded-full  shadow-md w-52 sm:relative  border-x-yellow-500 border-4 lg:left-48 md:left-12 sm:w-96 sm:h-40 h-48 p-4 cursor-pointer"
+        className="bg-pink rounded-full  shadow-md w-52 sm:relative  border-3 lg:left-48 md:left-12 sm:w-96 sm:h-40 h-48 p-4 cursor-pointer"
         initial={{ scale: 0.2, opacity: 0.3 }}
         whileHover={{ scale: 2, opacity: 1 }}
         animate={{ rotate: 360, scale: 1.5, opacity: 0.7 }}
@@ -52,7 +52,7 @@ function WorkExperience() {
         }}
       >
         <motion.h1
-          className="text-green text-center font-semibold"
+          className="text-lightgreen text-center font-semibold"
           style={{ fontFamily: "Open Sans" }}
         >
           Tvadartham Technology Pvt Ltd.
