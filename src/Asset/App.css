@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 
 :root {
     --black: #0E0B0E;
     --green: #2A504A;
     --paleYellow: #7E6145;
-    --lightyellow : #A68E8B;
+    --lightyellow : #7E6145;
     --pink : #96276B;
     --white: #ffffff;
     --lightblue : rgb(138,61,255)
