@@ -7,6 +7,7 @@ import { useAnimationFrame } from "framer-motion";
 import Nav from "./Component/Nav/Nav";
 import About from "./Component/About";
 import WorkExperience from "./Component/WorkExperience";
+import Education from "./Component/Education";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -18,20 +19,25 @@ function App() {
   }, []);
   return (
     <div className="bg-black">
-      <div className="container h-screen mx-auto ">
+      <div className="container  mx-auto ">
         <Nav />
         {loading ? (
           <div className="h-screen flex items-center justify-center ">
             <HashLoader color="white" size={200} aria-label="Loading Spinner" />
           </div>
         ) : (
-          <section>
+          <section className="">
             {/* ---- home Page  ----- */}
-            {/* <section className="flex flex-col justify-center h-screen px-4 font-weight: 400; font-bold text-xs">
-            <HomePage />
-          </section> */}
+            <section className="flex flex-col justify-center  px-4 font-weight: 400; font-bold text-xs">
+              <HomePage />
+            </section>
+
+            {/* ---- Education  ----- */}
+            <section className="education md:mt-0  ">
+              <Education />
+            </section>
             {/* ---- Work Experience  ----- */}
-            <section className=" ">
+            <section className="">
               <WorkExperience />
             </section>
           </section>
