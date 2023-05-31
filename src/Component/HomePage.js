@@ -27,11 +27,11 @@ const HomePage = () => {
 
   // JSX code rendering the component
   return (
-    <div className="flex  justify-center flex-col h-screen text-7xl">
+    <div className="flex  justify-center flex-col h-screen text-7xl text-pink">
       <div
         style={{
           fontFamily: "'Nunito', sans-serif;",
-          color: "white",
+
           position: "relative",
 
           bottom: "10px",

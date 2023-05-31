@@ -6,12 +6,62 @@
 
 :root {
     --black: #0E0B0E;
-    --green: #2A504A;
-    --paleYellow: #edf2f4;
-    --lightgreen : #f5cb5c;
+    --lightgreen: #4ccebb;
+    --paleYellow: #19495a;
+    --lightyellow : #F5CB5C;
     --pink : #96276B;
-    --white: #ffffff;
-    --lightblue : rgb(138,61,255)
+      --white: #ffffff;
+    --lightblue : rgb(138,61,255);
+    --darkblue : #17141d;
   }
 
+
+  
+  .education .card {
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+
+
+
+
+
+
+ .education .card:not(:first-child) {
+    margin-left: -40px;
+  }
+
+  .education .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .education .card:not(:first-child) {
+      margin-left: 0px;
+    }
+    .education .card:hover ~ .card {
+      transform: translateY(0px)!important;
+      left: 0px!important;
+    }
+
+    .education .card {
+      max-width: 21rem;
+      display:flex;
+      margin-left: auto;
+      margin-right: auto;
+    
+    }
+    .education .card:not(:first-child) {
+      /* margin-left: -50px; */
+      margin-top: 30px;
+      margin-left: auto!important;
+    }
+  }
+  
+
+
+  
   

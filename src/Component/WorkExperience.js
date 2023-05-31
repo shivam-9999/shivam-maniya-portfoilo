@@ -7,13 +7,13 @@ function WorkExperience() {
     <div className="flex sm:pt-32 pt-40 sm:gap-40  gap-48  flex-col justify-between items-center">
       <motion.div
         className="bg-pink rounded-full shadow-md w-52   border-3 sm:relative lg:-left-56 md:-left-12  sm:w-96  sm:h-40 h-48 p-4 cursor-pointer"
-        initial={{ scale: 0.2, opacity: 0.3 }}
-        whileHover={{ scale: 2, opacity: 1 }}
-        animate={{ rotate: 360, scale: 1.5, opacity: 0.7 }}
+        initial={{ rotate: -30, scale: 0.8, opacity: 0.8 }}
+        whileHover={{ scale: 1.9, opacity: 1 }}
+        whileInView={{ rotate: 0, scale: 1.7, opacity: 0.9 }}
         transition={{
           type: "spring",
           damping: 20,
-          delay: 0.1,
+          delay: 0.2,
           duration: 2,
         }}
       >
@@ -41,14 +41,14 @@ function WorkExperience() {
       </motion.div>
       <motion.div
         className="bg-pink rounded-full  shadow-md w-52 sm:relative  border-3 lg:left-48 md:left-12 sm:w-96 sm:h-40 h-48 p-4 cursor-pointer"
-        initial={{ scale: 0.2, opacity: 0.3 }}
-        whileHover={{ scale: 2, opacity: 1 }}
-        animate={{ rotate: 360, scale: 1.5, opacity: 0.7 }}
+        initial={{ rotate: -30, scale: 0.8, opacity: 0.8 }}
+        whileHover={{ scale: 1.9, opacity: 1 }}
+        whileInView={{ rotate: 0, scale: 1.7, opacity: 0.9 }}
         transition={{
           type: "spring",
-          // stiffness: -320,
+          duration: 2,
           damping: 20,
-          delay: 0.1,
+          delay: 0.2,
         }}
       >
         <motion.h1
