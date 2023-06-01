@@ -8,6 +8,7 @@ import Nav from "./Component/Nav/Nav";
 import About from "./Component/About";
 import WorkExperience from "./Component/WorkExperience";
 import Education from "./Component/Education";
+import Projects from "./Component/Projects";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -15,14 +16,14 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 0);
+    });
   }, []);
   return (
     <div className="bg-black">
       <div className="container  mx-auto ">
         <Nav />
         {loading ? (
-          <div className="h-screen flex items-center justify-center ">
+          <div className="min-h-screen flex items-center justify-center ">
             <HashLoader color="white" size={200} aria-label="Loading Spinner" />
           </div>
         ) : (
@@ -32,6 +33,8 @@ function App() {
               <HomePage />
             </section>
 
+            <section></section>
+
             {/* ---- Education  ----- */}
             <section className="education md:mt-0  ">
               <Education />
@@ -39,6 +42,11 @@ function App() {
             {/* ---- Work Experience  ----- */}
             <section className="">
               <WorkExperience />
+            </section>
+
+            {/* ---- Project  ----- */}
+            <section>
+              <Projects />
             </section>
           </section>
         )}

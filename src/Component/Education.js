@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Education() {
   return (
-    <div className="mx-auto md:gap-0 sm:gap-4 justify-center items-center h-screen md:flex md:flex-row sm:flex-col">
+    <div className="mx-auto md:gap-0 sm:gap-4 justify-center items-center min-h-screen md:flex md:flex-row sm:flex-col">
       <motion.div
         className="card h-96 lg:w-80 md:w-60  bg-zinc-300 rounded-lg "
         initial={{ rotate: 20, scale: 0.2, opacity: 0.3 }}
