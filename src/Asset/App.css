@@ -2,21 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
 :root {
     --black: #0E0B0E;
     --lightgreen: #4ccebb;
     --paleYellow: #19495a;
-    --lightyellow : #F5CB5C;
+    --green: #2d9687;
+    --lightyellow : #e9b171;
+    /* --yellow: #e9b171;; */
     --pink : #96276B;
       --white: #ffffff;
     --lightblue : rgb(138,61,255);
     --darkblue : #17141d;
   }
+  .secContent{
+    max-width: 50%;
+    font-size: 1.375rem;
+    font-family: 'Open Sans', sans-serif;
+  }
 
-
-  
   .education .card {
     box-shadow: -1rem 0 3rem #000;
     transition: 0.4s ease-out;
@@ -30,15 +34,48 @@
 
 
  .education .card:not(:first-child) {
-    margin-left: -40px;
+    margin-left: -20px;
+
   }
 
   .education .card:hover ~ .card {
     position: relative;
     left: 50px;
   }
+  .project{
+    margin-top: 500px;
+  }
+
+  .teleIcon{
+    font-size: 240px;
+  }
 
   @media screen and (max-width: 768px) {
+    .homepage{
+      margin-bottom: 200px ;
+    }
+    
+    .secContent{
+      max-width: 100%;
+     
+    }
+    .icon-container{
+      /* margin-left: 25px; */
+      width: 400px;
+    }
+    .workExperience{
+      margin-top: 300px;
+    }
+    .project{
+      margin-top: 400px;
+    }
+
+    .education{
+      margin-top: 330px;
+    }
+    .teleIcon{
+      font-size: 220px;
+    }
     .education .card:not(:first-child) {
       margin-left: 0px;
     }

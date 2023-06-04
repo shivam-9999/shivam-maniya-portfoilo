@@ -38,9 +38,9 @@ const Navbar = () => {
         onClick={toggleNavbar}
       >
         {isOpen ? (
-          <BiLeftArrow className="h-6 w-6 text-lightyellow" />
+          <BiLeftArrow className="h-6 w-6 text-white" />
         ) : (
-          <FiMenu className="h-6 w-6 text-lightyellow" />
+          <FiMenu className="h-6 w-6 text-white" />
         )}
       </button>
 

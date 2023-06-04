@@ -27,7 +27,7 @@ const HomePage = () => {
 
   // JSX code rendering the component
   return (
-    <div className="flex  justify-center flex-col min-h-screen text-7xl text-pink">
+    <div className="flex  justify-center flex-col min-h-screen text-7xl text-lightyellow">
       <div
         style={{
           fontFamily: "'Nunito', sans-serif;",
@@ -45,7 +45,7 @@ const HomePage = () => {
         <motion.p
           style={{
             fontFamily: "'Nunito', sans-serif;",
-            color: "lightyellow",
+            color: "white",
             fontSize: "18px",
             lineHeight: "30px",
             maxWidth: "78%",

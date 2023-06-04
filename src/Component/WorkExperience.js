@@ -6,7 +6,7 @@ function WorkExperience() {
   return (
     <div className="flex sm:pt-32 pt-40 sm:gap-40  gap-48  flex-col justify-between items-center">
       <motion.div
-        className="bg-pink rounded-full shadow-md w-52   border-3 sm:relative lg:-left-56 md:-left-12  sm:w-96  sm:h-40 h-48 p-4 cursor-pointer"
+        className="bg-lightyellow rounded-full shadow-md w-52   border-3 sm:relative lg:-left-56 md:-left-12  sm:w-96  sm:h-40 h-48 p-4 cursor-pointer"
         initial={{ rotate: -30, scale: 0.8, opacity: 0.8 }}
         whileHover={{ scale: 1.9, opacity: 1 }}
         whileInView={{ rotate: 0, scale: 1.7, opacity: 0.9 }}
@@ -40,7 +40,7 @@ function WorkExperience() {
         {/* Card content goes here */}
       </motion.div>
       <motion.div
-        className="bg-pink rounded-full  shadow-md w-52 sm:relative  border-3 lg:left-48 md:left-12 sm:w-96 sm:h-40 h-48 p-4 cursor-pointer"
+        className="bg-white rounded-full  shadow-md w-52 sm:relative  border-3 lg:left-48 md:left-12 sm:w-96 sm:h-40 h-48 p-4 cursor-pointer"
         initial={{ rotate: -30, scale: 0.8, opacity: 0.8 }}
         whileHover={{ scale: 1.9, opacity: 1 }}
         whileInView={{ rotate: 0, scale: 1.7, opacity: 0.9 }}

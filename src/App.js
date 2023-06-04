@@ -9,6 +9,7 @@ import About from "./Component/About";
 import WorkExperience from "./Component/WorkExperience";
 import Education from "./Component/Education";
 import Projects from "./Component/Projects";
+import ContactInformation from "./Component/ContactInformation";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -29,25 +30,31 @@ function App() {
         ) : (
           <section className="">
             {/* ---- home Page  ----- */}
-            <section className="flex flex-col justify-center  px-4 font-weight: 400; font-bold text-xs">
+            <section className="homepage flex flex-col justify-center md:mb-48 px-4 font-weight: 400; font-bold text-xs">
               <HomePage />
             </section>
 
-            <section></section>
+            {/* ---- About ----- */}
+            <section className="md:mb-48 sm:mb-96 ">
+              <About />
+            </section>
 
             {/* ---- Education  ----- */}
-            <section className="education md:mt-0  ">
+            <section className="education md:mb-48 ">
               <Education />
             </section>
             {/* ---- Work Experience  ----- */}
-            <section className="">
+            <section className=" workExperience  sm:mb-40">
               <WorkExperience />
             </section>
 
             {/* ---- Project  ----- */}
-            <section>
+            <section className="project">
               <Projects />
             </section>
+
+            {/* ---- Contact Us  ----- */}
+            <ContactInformation />
           </section>
         )}
       </div>
